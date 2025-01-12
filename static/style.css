@@ -1,23 +1,44 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f4f4f4;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
+/* Navbar Styling */
+.navbar {
+    background-color: #000000;
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-brand {
+    margin-left: 20px;
+}
+
+/* Centering the Game Box */
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.quiz-box {
     background: white;
     padding: 20px;
     max-width: 500px;
-    margin: auto;
+    width: 90%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-#quiz-container {
-    margin-top: 20px;
-}
-
+/* Button Styles */
 button {
     display: block;
     width: 100%;
@@ -27,6 +48,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
 button:hover {
@@ -35,5 +57,17 @@ button:hover {
 
 #restart {
     background-color: #ff4d4d;
+    color: white;
+    display: none;
+}
+
+/* Correct and Wrong Answer Highlight */
+.correct {
+    background-color: green !important;
+    color: white;
+}
+
+.wrong {
+    background-color: red !important;
     color: white;
 }
